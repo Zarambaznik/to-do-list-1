@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: monospace;
 }
@@ -14,6 +12,11 @@ body {
     width: 800px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ul li {
     cursor: pointer;
     position: relative;
@@ -21,6 +24,7 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.3s;
+    list-style-type: none;
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -36,7 +40,7 @@ ul li:hover {
     background: #ddd;
 }
 
-ul li:checked {
+ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
